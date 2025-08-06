@@ -23,3 +23,17 @@ include:
     shield: lily58_left
   - board: nice_nano_v2
     shield: lily58_right
+# build.yaml
+
+# Copyright (c) 2020 Pete Johanson
+# SPDX-License-Identifier: MIT
+
+---
+include:
+  - board: lily58_pro_micro
+    shield: lily58_left
+  - board: lily58_pro_micro
+    shield: lily58_right
+    kconfig: |
+      CONFIG_ZMK_MOUSE=y
+      CONFIG_ZMK_POINTING_DEVICE_PIMORONI_PIM447=y
